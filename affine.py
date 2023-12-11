@@ -1,7 +1,5 @@
-import math
-
 def modinv(a, m):
-    return next((x for x in range(1, m) if (a * x) % m == 1), None)
+    return pow(a, -1, m)
 
 def affine_encrypt(text, key):
     return ''.join(
